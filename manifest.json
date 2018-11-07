@@ -1,5 +1,5 @@
 {
-  "manifest_version": "1",
+  "manifest_version": "1.1",
   "api_version": "1",
   "name": "Session Actions",
   "description": "Logout / Reboot / Shutdown / Suspend easily.",
@@ -20,25 +20,25 @@
         "id": "suspend_command",
         "type": "input",
         "name": "Command to run to execute suspend action",
-        "default_value": "systemctl suspend"
+        "default_value": "xfce4-session-logout --suspend"
     },
     {
         "id": "logout_command",
         "type": "input",
         "name": "Command to run to execute logout action",
-        "default_value": "cinnamon-session-quit --logout"
+        "default_value": "xfce4-session-logout --logout"
     },
     {
         "id": "shutdown_command",
         "type": "input",
         "name": "Command to run to execute shutdown action",
-        "default_value": "cinnamon-session-quit --power-off"
+        "default_value": "xfce4-session-logout --halt"
     },
     {
         "id": "reboot_command",
         "type": "input",
         "name": "Command to run to execute reboot action",
-        "default_value": "cinnamon-session-quit --reboot"
+        "default_value": "xfce4-session-logout --reboot"
     }
   ]
 }
