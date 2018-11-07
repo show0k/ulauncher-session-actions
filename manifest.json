@@ -17,6 +17,12 @@
       "default_value": "exit"
     },
     {
+        "id": "suspend_command",
+        "type": "input",
+        "name": "Command to run to execute suspend action",
+        "default_value": "systemctl suspend"
+    },
+    {
         "id": "logout_command",
         "type": "input",
         "name": "Command to run to execute logout action",
@@ -33,12 +39,6 @@
         "type": "input",
         "name": "Command to run to execute reboot action",
         "default_value": "cinnamon-session-quit --reboot"
-    },
-    {
-        "id": "suspend_command",
-        "type": "input",
-        "name": "Command to run to execute suspend action",
-        "default_value": "systemctl suspend"
     }
   ]
 }
