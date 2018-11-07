@@ -1,8 +1,8 @@
 {
-  "manifest_version": "1.1",
+  "manifest_version": "1",
   "api_version": "1",
   "name": "Session Actions",
-  "description": "Logout / Reboot / Shutdown / Suspend easily.",
+  "description": "Suspend / Logout / Reboot / Shutdown easily.",
   "developer_name": "gurkan.in",
   "icon": "images/exit.png",
   "options": {
