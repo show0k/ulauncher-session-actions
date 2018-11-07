@@ -34,6 +34,14 @@ class KeywordQueryEventListener(EventListener):
         if len(myList) == 1:
             items.append(
                 ExtensionResultItem(
+                    icon='images/suspend.png',
+                    name='Suspend',
+                    description='Trigger sleep mode',
+                    on_enter=RunScriptAction(suspend_command, None)
+                )
+            )
+            items.append(
+                ExtensionResultItem(
                     icon='images/reboot.png',
                     name='Reboot',
                     description='Restart computer',
@@ -54,14 +62,6 @@ class KeywordQueryEventListener(EventListener):
                     name='Logout',
                     description='Logout from session',
                     on_enter=RunScriptAction(logout_command, None)
-                )
-            )
-            items.append(
-                ExtensionResultItem(
-                    icon='images/suspend.png',
-                    name='Suspend',
-                    description='Trigger sleep mode',
-                    on_enter=RunScriptAction(suspend_command, None)
                 )
             )
 
